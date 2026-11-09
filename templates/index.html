@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceCare | Your Voice Matters</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="/" class="brand">
+            <span class="brand-icon">✳</span>
+            <span>voice<span class="brand-light">care</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#how-it-works">How it works</a>
+            <a href="#why-voicecare">Why VoiceCare</a>
+            <a href="/admin">Hospital dashboard ↗</a>
+        </nav>
+
+        <a href="#start" class="nav-button">Share your concern <span>↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero" id="start">
+            <div class="hero-copy">
+                <div class="eyebrow">
+                    <span class="live-dot"></span>
+                    A BETTER WAY TO BE HEARD
+                </div>
+
+                <h1>Your voice can<br>make healthcare <span>better.</span></h1>
+
+                <p class="hero-description">
+                    Every experience matters. Tell us what's happening at your
+                    hospital, in your own words. We'll help make sure your
+                    concern is heard.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#complaint" class="primary-button">Share your experience <span>→</span></a>
+                    <span class="privacy-note">♡ &nbsp; Your feedback matters</span>
+                </div>
+
+                <div class="hero-stat">
+                    <div class="stat-icon">✳</div>
+                    <div>
+                        <strong>Speak freely. Be heard.</strong>
+                        <p>A simple, guided way to share feedback.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="art-circle circle-one"></div>
+                <div class="art-circle circle-two"></div>
+
+                <div class="quote-card">
+                    <span class="quote-mark">“</span>
+                    <p>Better care begins<br>when we listen.</p>
+                    <span class="quote-caption">THE VOICECARE PROMISE</span>
+                </div>
+
+                <div class="art-bottom-card">
+                    <span class="art-check">✓</span>
+                    <div>
+                        <strong>Your voice matters</strong>
+                        <small>Every concern deserves attention</small>
+                    </div>
+                </div>
+
+                <div class="art-decoration">✳</div>
+            </div>
+        </section>
+
+        <section class="complaint-section" id="complaint">
+            <div class="section-heading">
+                <div class="eyebrow">WE'RE HERE TO LISTEN</div>
+                <h2>Let's start with <span>you.</span></h2>
+                <p>A few simple questions will help us understand your experience.</p>
+            </div>
+
+            <div class="complaint-card">
+                <div class="card-topline">
+                    <span class="step-label" id="step-label">STEP 01 OF 03</span>
+                    <span class="time-label">About 2 minutes</span>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+
+                <div id="question-area">
+                    <h3>Which language would you like to use?</h3>
+                    <p class="question-help">Choose the language you're most comfortable speaking.</p>
+
+                    <div class="language-grid">
+                        <button class="language-option selected" data-language="en-IN">English</button>
+                        <button class="language-option" data-language="kn-IN">ಕನ್ನಡ</button>
+                        <button class="language-option" data-language="hi-IN">हिन्दी</button>
+                        <button class="language-option" data-language="ta-IN">தமிழ்</button>
+                        <button class="language-option" data-language="te-IN">తెలుగు</button>
+                        <button class="language-option" data-language="es-ES">Español</button>
+                    </div>
+
+                    <button class="primary-button continue-button" id="continue-button">
+                        Continue <span>→</span>
+                    </button>
+                </div>
+
+                <div class="voice-area">
+                    <span class="voice-mini-label">VOICE-LED FEEDBACK</span>
+                    <div class="voice-wave">
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                    </div>
+                    <p>Prefer speaking? We'll guide you one question at a time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-section" id="how-it-works">
+            <div class="section-heading">
+                <div class="eyebrow">SIMPLE BY DESIGN</div>
+                <h2>Three steps. <span>One stronger voice.</span></h2>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <div class="step-symbol">◉</div>
+                    <h3>Choose your language</h3>
+                    <p>Start in the language that feels natural to you.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <div class="step-symbol">♫</div>
+                    <h3>Speak your experience</h3>
+                    <p>Share your concern by voice or type it instead.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <div class="step-symbol">✓</div>
+                    <h3>Track your feedback</h3>
+                    <p>Receive a reference number to check your complaint status.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="why-section" id="why-voicecare">
+            <div>
+                <div class="eyebrow">LISTENING LEADS TO CHANGE</div>
+                <h2>Healthcare should<br>always <span>hear you.</span></h2>
+            </div>
+            <p>
+                VoiceCare aims to make patient feedback easier to share and
+                easier for hospitals to understand. Because better experiences
+                start with listening.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="/" class="brand">
+            <span class="brand-icon">✳</span>
+            <span>voice<span class="brand-light">care</span></span>
+        </a>
+        <p>Designed to listen. Built to improve care.</p>
+        <span class="footer-note">A healthcare feedback prototype</span>
+    </footer>
+</body>
+</html>
